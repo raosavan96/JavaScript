@@ -56,4 +56,4 @@ let my_married = true;
 
 console.log(typeof(my_age));
 console.log(typeof(my_name));
-console.log(typeof(my_married));
+console.log(typeof(my_married)); 
