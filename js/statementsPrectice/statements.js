@@ -26,7 +26,7 @@
 // }
 
 
-let num1 = parseInt(prompt("Enter Guessing Number"));
+let num1 = parseInt(prompt.hide("Enter Guessing Number"));
 let num2 = parseInt(prompt("Enter Guessing Number"));
 
 if (num1 == num2) {
