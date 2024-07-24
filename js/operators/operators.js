@@ -204,9 +204,9 @@
 
 // // iii. logical not ( ! )
 
-let sawan = true;
-let yadav = false;
+// let sawan = true;
+// let yadav = false;
 
-console.log(!sawan);
-console.log(!yadav);
+// console.log(!sawan);
+// console.log(!yadav);
 
