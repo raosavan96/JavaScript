@@ -2,7 +2,7 @@
 
 // // 1. if statement
 
-// // exp_1
+// // exp_1 
 
 // let number = 10;
 
