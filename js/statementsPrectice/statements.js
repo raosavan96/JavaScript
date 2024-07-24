@@ -23,7 +23,7 @@
 //     console.log("Even");
 // } else {
 //     console.log("Odd");
-// }
+// } 
 
 
 let num1 = parseInt(prompt.hide("Enter Guessing Number"));
