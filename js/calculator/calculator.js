@@ -7,7 +7,7 @@ if (operator == "+") {
     output = num1 + num2;
 } else if (operator == "-") {
     output = num1 - num2;
-} else if (operator == "*") {
+} else if (operator == "*") { 
     output = num1 * num2;
 } else if (operator == "/") {
     output = num1 / num2;
