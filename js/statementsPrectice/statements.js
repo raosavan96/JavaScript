@@ -9,7 +9,7 @@
 //     output = num1 + num2;
 // } else if (operator == "-") {
 //     output = num1 - num2;
-// } else if (operator == "*") { 
+// } else if (operator == "*") {
 //     output = num1 * num2;
 // } else if (operator == "/") {
 //     output = num1 / num2;
@@ -19,7 +19,6 @@
 
 // console.log( num1 + operator + num2 + "=" +  output);
 
-
 //  exp_2
 
 // let hii = prompt("Enter Number");
@@ -28,8 +27,7 @@
 //     console.log("Even");
 // } else {
 //     console.log("Odd");
-// } 
-
+// }
 
 //  exp_3
 
@@ -41,7 +39,6 @@
 // } else {
 //     console.log("Your Gurssing Number is Wrong");
 // }
-
 
 //  exp_4
 
@@ -73,31 +70,25 @@
 //     }
 // }
 
+// //  exp_5
 
-//  exp_5 
+// // let userInput = require("prompt-sync")();
+// let marks = prompt("Enter student marks :- ");
 
-// let userInput = require("prompt-sync")();
-let marks = prompt("Enter student marks :- ");
-
-if (marks >= 90 && marks <= 100) {
-    alert("A+ Grade");
-}
-else if (marks >= 80 && marks <= 89) {
-    alert("A Grade");
-}
-else if (marks >= 70 && marks <= 79) {
-    alert("B+ Grade");
-}
-else if (marks >= 60 && marks <= 69) {
-    alert("B Grade");
-}
-else if (marks >= 45 && marks <= 59) {
-    alert("C Grade");
-}
-else if (marks >= 35 && marks <= 44) {
-    alert("d Grade");
-} else if (marks < 35) {
-    alert("Fail");
-} else {
-    alert("Invalid Input");
-}
+// if (marks >= 90 && marks <= 100) {
+//   alert("A+ Grade");
+// } else if (marks >= 80 && marks <= 89) {
+//   alert("A Grade");
+// } else if (marks >= 70 && marks <= 79) {
+//   alert("B+ Grade");
+// } else if (marks >= 60 && marks <= 69) {
+//   alert("B Grade");
+// } else if (marks >= 45 && marks <= 59) {
+//   alert("C Grade");
+// } else if (marks >= 35 && marks <= 44) {
+//   alert("d Grade");
+// } else if (marks < 35) {
+//   alert("Fail");
+// } else {
+//   alert("Invalid Input");
+// }
