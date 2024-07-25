@@ -76,28 +76,28 @@
 
 //  exp_5 
 
-
-let marks = "95";
+// let userInput = require("prompt-sync")();
+let marks = prompt("Enter student marks :- ");
 
 if (marks >= 90 && marks <= 100) {
-    console.log("A+ Grade");
+    alert("A+ Grade");
 }
 else if (marks >= 80 && marks <= 89) {
-    console.log("A Grade");
+    alert("A Grade");
 }
 else if (marks >= 70 && marks <= 79) {
-    console.log("B+ Grade");
+    alert("B+ Grade");
 }
 else if (marks >= 60 && marks <= 69) {
-    console.log("B Grade");
+    alert("B Grade");
 }
 else if (marks >= 45 && marks <= 59) {
-    console.log("C Grade");
+    alert("C Grade");
 }
 else if (marks >= 35 && marks <= 44) {
-    console.log("d Grade");
-} else if (marks <= 35) {
-    console.log("Fail");
+    alert("d Grade");
+} else if (marks < 35) {
+    alert("Fail");
 } else {
-    console.log("Invalid Input");
+    alert("Invalid Input");
 }
