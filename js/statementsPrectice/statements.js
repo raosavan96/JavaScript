@@ -193,6 +193,10 @@ if (userInput == "sawan") {
   alert("Indra");
 } else if (userInput == "deshraj") {
   alert("Sonu");
-} else {
+} 
+else if (userInput == "ashok") {
+  alert("Sonu");
+} 
+else {
   alert("Invalid Inpur");
 }
