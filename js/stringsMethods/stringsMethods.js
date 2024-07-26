@@ -15,9 +15,23 @@
 
 // // 3. trim() methods
 
-// let text_2 = "    Hi aap kese ho   ";
+let text = "    Hi aap kese ho   ";
 // let blanckSpece = text_2.trim();
-// console.log(blanckSpece);
+// console.log(text.trim());
+
+// trimStart trim
+
+let textt = "    Hi aap kese ho   ";
+let startText = textt.trimStart();
+
+console.log(startText.length);
+console.log(startText);
+
+// trimEnd trim
+console.log(text.length);
+let enttrim = text.trimEnd();
+console.log(enttrim.length);
+console.log(enttrim);
 
 // // 4. toUpperCase() methods
 
@@ -90,13 +104,13 @@
 // console.log(a.concat(c));
 // console.log(a.replace("s", "r"));
 // console.log(a.charAt(3));
-// console.log(a[2]);
+//  console.log(a[2]);
 
-// temlate leterals
+// // temlate leterals
 
-let myName = "Sawan Kamar Yadav";
-let myNum = 9636447793;
-let myPro = "Wev Developer";
+// let myName = "Sawan Kamar Yadav";
+// let myNum = 9636447793;
+// let myPro = "Wev Developer";
 
-let output = `I am ${myName} my phone number ${myNum} and my profession ${myPro}`;
-console.log(output);
+// let output = `I am ${myName} my phone number ${myNum} and my profession ${myPro}`;
+// console.log(output);
