@@ -9,29 +9,29 @@
 // // 2. slice() methods
 
 // let text = "Sawan Kumar Yadav";
-
+ 
 // let myCute = text.slice(6, 11);
 // console.log(myCute);
 
 // // 3. trim() methods
 
-let text = "    Hi aap kese ho   ";
-// let blanckSpece = text_2.trim();
-// console.log(text.trim());
+// let text = "    Hi aap kese ho   ";
+// // let blanckSpece = text_2.trim();
+// // console.log(text.trim());
 
-// trimStart trim
+// // trimStart trim
 
-let textt = "    Hi aap kese ho   ";
-let startText = textt.trimStart();
+// let textt = "    Hi aap kese ho   ";
+// let startText = textt.trimStart();
 
-console.log(startText.length);
-console.log(startText);
+// console.log(startText.length);
+// console.log(startText);
 
-// trimEnd trim
-console.log(text.length);
-let enttrim = text.trimEnd();
-console.log(enttrim.length);
-console.log(enttrim);
+// // trimEnd trim
+// console.log(text.length);
+// let enttrim = text.trimEnd();
+// console.log(enttrim.length);
+// console.log(enttrim);
 
 // // 4. toUpperCase() methods 
 
