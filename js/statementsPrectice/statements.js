@@ -149,31 +149,50 @@
 // let final = `You have to pay ${final_bill} for ${quantity} - ${item}`
 // console.log(final);
 
-// 2. time prectice
+// // 2. time prectice
 
-let promptSec = require("prompt-sync")();
+// let promptSec = require("prompt-sync")();
 
-let item = promptSec("Enter your item name :- ");
-let price = promptSec("Enter item price :- ");
-let quantity = promptSec("Enter item quantity :- ");
+// let item = promptSec("Enter your item name :- ");
+// let price = promptSec("Enter item price :- ");
+// let quantity = promptSec("Enter item quantity :- ");
 
-let discount = 10;
-let gst = 20;
+// let discount = 10;
+// let gst = 20;
 
-bill = quantity * price;
-bill_discount = (bill * discount) / 100;
-totel_bill = bill - bill_discount;
-bill_gst = (totel_bill * gst) / 100;
-final_bill = bill_gst + totel_bill;
+// bill = quantity * price;
+// bill_discount = (bill * discount) / 100;
+// totel_bill = bill - bill_discount;
+// bill_gst = (totel_bill * gst) / 100;
+// final_bill = bill_gst + totel_bill;
 
-console.log("Item name :- " + item);
-console.log("Item price :- " + price);
-console.log("Item quantity :- " + quantity);
-console.log("Item bill :- " + bill);
-console.log("Item discount :- " + bill_discount);
-console.log("Total bill :- " + totel_bill);
-console.log("Bill GST :- " + bill_gst);
-console.log("Final bill :- " + final_bill);
+// console.log("Item name :- " + item);
+// console.log("Item price :- " + price);
+// console.log("Item quantity :- " + quantity);
+// console.log("Item bill :- " + bill);
+// console.log("Item discount :- " + bill_discount);
+// console.log("Total bill :- " + totel_bill);
+// console.log("Bill GST :- " + bill_gst);
+// console.log("Final bill :- " + final_bill);
 
-let finalOutput = `You have to pay \u20B9 ${final_bill} for ${quantity} - ${item}`;
-console.log(finalOutput);
+// let finalOutput = `You have to pay \u20B9 ${final_bill} for ${quantity} - ${item}`;
+// console.log(finalOutput);
+
+
+
+// exp
+
+let toLower = prompt("Enter Name :- ");
+let userInput = toLower.toLowerCase();
+
+if (userInput == "sawan") {
+  alert("Nisha");
+} else if (userInput == "lokesh") {
+  alert("Manisha");
+} else if (userInput == "ratan"){
+  alert("Indra");
+} else if (userInput == "deshraj") {
+  alert("Sonu");
+} else {
+  alert("Invalid Inpur");
+}
