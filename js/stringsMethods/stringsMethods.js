@@ -33,7 +33,7 @@ let enttrim = text.trimEnd();
 console.log(enttrim.length);
 console.log(enttrim);
 
-// // 4. toUpperCase() methods
+// // 4. toUpperCase() methods 
 
 // let myName = "sawan kumar yadav";
 
