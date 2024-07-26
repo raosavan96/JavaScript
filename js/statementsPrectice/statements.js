@@ -95,29 +95,85 @@
 
 // example prectice
 
-let typesJobSmall = prompt("goverment | business | private");
-let typesJob = typesJobSmall.toLowerCase();
+// let typesJobSmall = prompt("goverment | business | private");
+// let typesJob = typesJobSmall.toLowerCase();
 
-if (typesJob === "goverment") {
-  let salary = prompt("Plese enter your salary");
-  if (salary >= 50000) {
-    alert("You can apply for loan");
-  } else if (salary < 50000) {
-    alert("You can not apply for loan");
-  } else {
-    alert("Invalid Input");
-  }
-} else if (typesJob === "business") {
-  let yearlyTurn = prompt("Plese enter your yearly turnover");
-  if (yearlyTurn >= 2000000) {
-    alert("You can apply for loan");
-  } else if (yearlyTurn < 2000000) {
-    alert("You can not apply for loan");
-  } else {
-    alert("Invalid Input");
-  }
-} else if (typesJob === "private") {
-  alert("No loan avaialbe for you");
-} else {
-  alert("Invalid Input");
-}
+// if (typesJob === "goverment") {
+//   let salary = prompt("Plese enter your salary");
+//   if (salary >= 50000) {
+//     alert("You can apply for loan");
+//   } else if (salary < 50000) {
+//     alert("You can not apply for loan");
+//   } else {
+//     alert("Invalid Input");
+//   }
+// } else if (typesJob === "business") {
+//   let yearlyTurn = prompt("Plese enter your yearly turnover");
+//   if (yearlyTurn >= 2000000) {
+//     alert("You can apply for loan");
+//   } else if (yearlyTurn < 2000000) {
+//     alert("You can not apply for loan");
+//   } else {
+//     alert("Invalid Input");
+//   }
+// } else if (typesJob === "private") {
+//   alert("No loan avaialbe for you");
+// } else {
+//   alert("Invalid Input");
+// }
+
+// // bill print tast
+
+// let item = prompt("Enter your item :- ");
+// let price = prompt("Enter price :- ");
+// let quantity = prompt("Enter item quantity :- ");
+
+// let discount = 10;
+// let gst = 20;
+
+// bill = price * quantity;
+// bill_discount = bill * discount / 100;
+// totel_bill = bill - bill_discount;
+// bill_gst = totel_bill*gst/100;
+// final_bill = bill_gst+totel_bill;
+
+// console.log("item name :- " +item);
+// console.log("item price :- " +price);
+// console.log("item quantity :- " + quantity);
+// console.log("item bill :- " +bill);
+// console.log("discount :- " +bill_discount);
+// console.log("totel bill :- " + totel_bill);
+// console.log("gst :- " +bill_gst);
+// console.log("final bill :- " +final_bill);
+
+// let final = `You have to pay ${final_bill} for ${quantity} - ${item}`
+// console.log(final);
+
+// 2. time prectice
+
+let promptSec = require("prompt-sync")();
+
+let item = promptSec("Enter your item name :- ");
+let price = promptSec("Enter item price :- ");
+let quantity = promptSec("Enter item quantity :- ");
+
+let discount = 10;
+let gst = 20;
+
+bill = quantity * price;
+bill_discount = (bill * discount) / 100;
+totel_bill = bill - bill_discount;
+bill_gst = (totel_bill * gst) / 100;
+final_bill = bill_gst + totel_bill;
+
+console.log("Item name :- " + item);
+console.log("Item price :- " + price);
+console.log("Item quantity :- " + quantity);
+console.log("Item bill :- " + bill);
+console.log("Item discount :- " + bill_discount);
+console.log("Total bill :- " + totel_bill);
+console.log("Bill GST :- " + bill_gst);
+console.log("Final bill :- " + final_bill);
+
+let finalOutput = `You have to pay \u20B9 ${final_bill} for ${quantity} - ${item}`;
+console.log(finalOutput);
