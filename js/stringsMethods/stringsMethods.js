@@ -9,7 +9,7 @@
 // // 2. slice() methods
 
 // let text = "Sawan Kumar Yadav";
- 
+
 // let myCute = text.slice(6, 11);
 // console.log(myCute);
 
@@ -33,7 +33,7 @@
 // console.log(enttrim.length);
 // console.log(enttrim);
 
-// // 4. toUpperCase() methods 
+// // 4. toUpperCase() methods
 
 // let myName = "sawan kumar yadav";
 
@@ -68,6 +68,12 @@
 // let rep = srt.replace("H", "Y");
 // console.log(rep);
 
+// // all text replece methods
+
+// let myText = "Kal ho na ho phir milenge chalte chalte";
+// let upText = myText.replaceAll("chalte", "haste");
+// console.log(upText);
+
 // // 8. charAt() methods
 
 // let fullName = "Sawan";
@@ -77,6 +83,41 @@
 // // key value find
 
 // console.log(str[4]);
+
+
+// 9. split methods
+
+// y method string datatype ko array object me change kr deta h
+
+// let myText = "Kal ho na ho phir milenge chalte chalte";
+// let splitt = myText.split();
+// console.log(splitt);
+
+
+// // 9. includes methods 
+
+// // y method strings me check krta h ky y word y later h ya ni or boolean value print krta h 
+
+// let myText = "Kal ho na ho phir milenge chalte chalte";
+// let srt = myText.includes("ho");
+
+// console.log(srt);
+
+
+// 10. indexOf methods
+
+// let myText = "Kal ho na ho phir milenge chalte hfi chalte";
+
+// let srt = myText.indexOf("fi");
+// console.log(srt);
+
+
+
+
+
+
+
+
 
 // // Teplate leterals in js
 

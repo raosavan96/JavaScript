@@ -92,3 +92,32 @@
 // } else {
 //   alert("Invalid Input");
 // }
+
+// example prectice
+
+let typesJobSmall = prompt("goverment | business | private");
+let typesJob = typesJobSmall.toLowerCase();
+
+if (typesJob === "goverment") {
+  let salary = prompt("Plese enter your salary");
+  if (salary >= 50000) {
+    alert("You can apply for loan");
+  } else if (salary < 50000) {
+    alert("You can not apply for loan");
+  } else {
+    alert("Invalid Input");
+  }
+} else if (typesJob === "business") {
+  let yearlyTurn = prompt("Plese enter your yearly turnover");
+  if (yearlyTurn >= 2000000) {
+    alert("You can apply for loan");
+  } else if (yearlyTurn < 2000000) {
+    alert("You can not apply for loan");
+  } else {
+    alert("Invalid Input");
+  }
+} else if (typesJob === "private") {
+  alert("No loan avaialbe for you");
+} else {
+  alert("Invalid Input");
+}
