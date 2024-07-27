@@ -102,10 +102,29 @@
 // let keyCheck = concatA[5];
 // console.log(keyCheck);
 
-// 10. splice() method in array
+// // 10. splice() method in array
 
-let myArray = ["Sawan", "Yadav", "Web Developer", 23];
+// let myArray = ["Sawan", "Yadav", "Web Developer", 23, 41, "Rao"];
 
-let spliceA = myArray.splice(3, 1, "50");
+// let spliceA = myArray.splice(3, 1, 50);
 
-console.log(myArray);
+// console.log(myArray);
+
+// // 11. short() methods in array
+
+// // array keys ko alpalater and num ko plhe print krta h
+
+// let myArray = ["sawan", "yadav", "web developer", 23, 41, "rao", "aman"];
+
+// myArray.sort();
+// console.log(myArray);
+
+// 12. slice() method in array
+
+// esme jha se print krana h us kay ka index pta do to us index se aage pura new array ban jayga or baki delete ho jayga 
+
+let myArray = ["sawan", "yadav", "web developer", 23, 41, "rao", "aman"];
+
+let newArray = myArray.slice(2);
+
+console.log(newArray);
