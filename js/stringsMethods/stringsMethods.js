@@ -27,7 +27,8 @@
 // console.log(startText.length);
 // console.log(startText);
 
-// // trimEnd trim
+// // trimEnd trim 
+
 // console.log(text.length);
 // let enttrim = text.trimEnd();
 // console.log(enttrim.length);

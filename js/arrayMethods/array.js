@@ -82,16 +82,13 @@
 // myArray.unshift("Rohit");
 // console.log(myArray);
 
-  
 // // 8. delete method in Array
-
 
 // let myArray = ["Sawan", "Yadav", "Web Developer", 23];
 
 // let deletA = delete myArray[2];
 
 // console.log(myArray);
-
 
 // // 9. concat() method in array
 
@@ -105,11 +102,10 @@
 // let keyCheck = concatA[5];
 // console.log(keyCheck);
 
-
 // 10. splice() method in array
 
 let myArray = ["Sawan", "Yadav", "Web Developer", 23];
 
-let spliceA = myArray.splice(3,1, "50");
+let spliceA = myArray.splice(3, 1, "50");
 
 console.log(myArray);
