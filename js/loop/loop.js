@@ -17,5 +17,4 @@ for (let i = 0; i < size; i++) {
 //   console.log(i);
   let indexP = myArray[i];
   console.log(indexP);
-
 }
