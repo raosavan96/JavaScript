@@ -119,12 +119,35 @@
 // myArray.sort();
 // console.log(myArray);
 
-// 12. slice() method in array
+// // 12. slice() method in array
 
-// esme jha se print krana h us kay ka index pta do to us index se aage pura new array ban jayga or baki delete ho jayga 
+// // esme jha se print krana h us kay ka index pta do to us index se aage pura new array ban jayga or baki delete ho jayga 
 
-let myArray = ["sawan", "yadav", "web developer", 23, 41, "rao", "aman"];
+// let myArray = ["sawan", "yadav", "web developer", 23, 41, "rao", "aman"];
 
-let newArray = myArray.slice(2);
+// let newArray = myArray.slice(2);
 
-console.log(newArray);
+// console.log(newArray);
+
+
+// prectice array
+
+
+let myArray = ["sawan", "yadav", "web developer", 23, 41, "rao", 25, "akash", "aman"];
+let myArrayTow = ["kamlesh", "deshraj","kishan"];
+0
+console.log(myArray);
+console.log(myArray[1]);
+console.log(myArray.pop());
+console.log(myArray.push("ratan lal yadav"));
+console.log(myArray.shift());
+console.log(myArray.unshift("Nisha"));
+console.log(myArray.concat(myArrayTow));
+console.log(myArray.toString())
+console.log(myArray.join("="));
+console.log(myArrayTow.slice(1));
+console.log(myArray.splice(3,2,"new add"));
+console.log(myArray[1]="rekha");
+console.log(myArray.sort());
+console.log(myArray);
+// console.log(myArrayTow);

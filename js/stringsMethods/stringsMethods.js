@@ -156,3 +156,30 @@
 
 // let output = `I am ${myName} my phone number ${myNum} and my profession ${myPro}`;
 // console.log(output);
+
+
+
+let myName = "Sawan";
+let midName = " Kumar";
+let lastName = " Yadav";
+let age = 23;
+let text = "kal or milenge chalte chalte";
+let textTwo = "     Rao shab";
+let textTr = "SAWAN KAMER YADAV";
+
+console.log(midName);
+console.log(myName.length);
+console.log(midName[2]);
+console.log(text.slice(4,6));
+console.log(textTwo.trim());
+console.log(textTwo.trimEnd());
+console.log(textTwo.trimStart());
+console.log(myName.toUpperCase());
+console.log(textTr.toLowerCase());
+console.log(myName.concat(midName, lastName));
+console.log(myName.replace("Sawan", "Rao Sawan"));
+console.log(lastName.charAt(3));
+console.log(text.includes("milenge"));
+console.log(text.split());
+console.log(text.indexOf("chalte"));
+console.log(text.replaceAll("chalte", "haste"));
