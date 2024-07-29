@@ -1,6 +1,8 @@
 // function in javaScript
 
-// 1. normal function
+// // 1. declaration function
+
+// exp_1
 
 function myFun() {
   console.log("Hi i am a function");
@@ -8,7 +10,7 @@ function myFun() {
 
 myFun();
 
-// 2. declaration function
+// exp_2
 
 function myDfun(a, b) {
   c = a + b;
@@ -17,38 +19,36 @@ function myDfun(a, b) {
 
 myDfun(10, 15);
 
-// 3. experience function
+// // 2. experience function
 
-let varFun = function (c, d) {
-  x = c * d;
-  console.log(x);
+// let varFun = function (c, d) {
+//   x = c * d;
+//   console.log(x);
+// };
+
+// varFun(5, 5);
+
+// // 3. arrow function
+
+// let arrowF = () => {
+//     let myName = "Sawan Kumar Yadav";
+//     console.log(myName);
+// }
+
+// arrowF();
+
+function yadav() {
+  console.log("hi");
+}
+yadav();
+
+let myPro = function () {
+  console.log("hii");
+};
+myPro();
+
+let mySur = () => {
+  console.log("poijoij");
 };
 
-varFun(5, 5);
-
-// 4. return function
-
-// exp_1
-
-let returnF = function () {
-  return h = 10 + 10;
-};
-
-returnF();
-console.log(h);
-
-// exp_2
-
-function myfn (a,b) {
-   return a*b;
-}
-console.log(myfn(10,100));
-
-// 5. arrow function
-
-let arrowF = () => {
-    let myName = "Sawan Kumar Yadav";
-    console.log(myName);
-}
-
-arrowF();
+mySur();
