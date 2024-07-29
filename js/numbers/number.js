@@ -1,1 +1,3 @@
-Number in JavaScript
+// Number in JavaScript
+
+// 1. inNan
