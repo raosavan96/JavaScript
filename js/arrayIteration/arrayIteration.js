@@ -117,20 +117,20 @@
 
 // array iteration prectice
 
-// let promptInput = require("prompt-sync")();
-// let myArray = promptInput("enter your input :- ");
+let promptInput = require("prompt-sync")();
+let myArray = promptInput("enter your input :- ");
 
-// if (myArray <= 10) {
-//   for (let i = 1; i <= myArray; i++) {
-//     console.log(`hi number :- ${i}`);
-//   }
-// } else if (myArray > 10 && myArray <= 20) {
-//   for (let i = 1; i <= myArray; i++) {
-//     console.log(`by number :- ${i}`);
-//   }
-// } else {
-//   console.log("Invalid Input");
-// }
+if (myArray <= 10) {
+  for (let i = 1; i <= myArray; i++) {
+    console.log(`hi number :- ${i}`);
+  }
+} else if (myArray > 10 && myArray <= 20) {
+  for (let i = 1; i <= myArray; i++) {
+    console.log(`by number :- ${i}`);
+  }
+} else {
+  console.log("Invalid Input");
+}
 
 // let myArray = ["sawan", "yadav", "lokesh","ratan", "mohit"];
 // let size = myArray.length;
@@ -157,31 +157,31 @@
 //   console.log(`value :- ${value}, index :- ${index}`);
 // }
 
-// myArray.map(ouputFun);
+// // myArray.map(ouputFun);
 
-let myArray = [
-  "Dadi",
-  "Ratan",
-  "Sawan",
-  "Lokesh",
-  "Indra",
-  "Nisha",
-  "Manisha",
-  "Sawan",
-];
+// let myArray = [
+//   "Dadi",
+//   "Ratan",
+//   "Sawan",
+//   "Lokesh",
+//   "Indra",
+//   "Nisha",
+//   "Manisha",
+//   "Sawan",
+// ];
 
-let myNum = [45, 1, 55, 54, 87, 4, 99, 101, 30, 7, 89, 100];
+// let myNum = [45, 1, 55, 54, 87, 4, 99, 101, 30, 7, 89, 100];
 
-function ouputFun(value) {
-  return value % 2 == 0;
-}
+// function ouputFun(value) {
+//   return value % 2 == 0;
+// }
 
-let out = myNum.filter(ouputFun);
-console.log(out);
+// let out = myNum.filter(ouputFun);
+// console.log(out);
 
-let arrayTwo = function (value) {
-  return value == "Sawan";
-};
+// let arrayTwo = function (value) {
+//   return value == "Sawan";
+// };
 
-let outTwo = myArray.filter(arrayTwo);
-console.log(outTwo);
+// let outTwo = myArray.filter(arrayTwo);
+// console.log(outTwo);
