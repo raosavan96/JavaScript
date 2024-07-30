@@ -103,14 +103,85 @@
 // });
 
 // console.log(output);
+//
+// // exp_7 ( Reduce ) Array Iteration Methods
 
-// exp_7 ( Reduce ) Array Iteration Methods
+// let myNum = [45, 1, 55, 54, 87, 4, 99, 101, 30, 7, 89, 100];
+
+// let myValue = myNum.reduce((total, value) => {
+//   console.log(`total :- ${total}, value :- ${value}`);
+//   return total + value;
+// }, 4);
+
+// console.log(myValue);
+
+// array iteration prectice
+
+// let promptInput = require("prompt-sync")();
+// let myArray = promptInput("enter your input :- ");
+
+// if (myArray <= 10) {
+//   for (let i = 1; i <= myArray; i++) {
+//     console.log(`hi number :- ${i}`);
+//   }
+// } else if (myArray > 10 && myArray <= 20) {
+//   for (let i = 1; i <= myArray; i++) {
+//     console.log(`by number :- ${i}`);
+//   }
+// } else {
+//   console.log("Invalid Input");
+// }
+
+// let myArray = ["sawan", "yadav", "lokesh","ratan", "mohit"];
+// let size = myArray.length;
+
+// for (let i = 0; i < size; i++) {
+//   console.log(myArray[i]);
+// }
+
+// // for each
+
+// let myArray = ["Dadi", "Ratan", "Sawan", "Lokesh", "Indra", "Nisha", "Manisha"];
+
+// let output = myArray.forEach((value, index) => {
+//   console.log(`value :- ${value}, index :- ${index}`);
+// });
+
+// console.log(output);
+
+// // map
+
+// let myArray = ["Dadi", "Ratan", "Sawan", "Lokesh", "Indra", "Nisha", "Manisha", "rohit", 22];
+
+// function ouputFun(value, index) {
+//   console.log(`value :- ${value}, index :- ${index}`);
+// }
+
+// myArray.map(ouputFun);
+
+let myArray = [
+  "Dadi",
+  "Ratan",
+  "Sawan",
+  "Lokesh",
+  "Indra",
+  "Nisha",
+  "Manisha",
+  "Sawan",
+];
 
 let myNum = [45, 1, 55, 54, 87, 4, 99, 101, 30, 7, 89, 100];
 
-let myValue = myNum.reduce((total, value) => {
-  console.log(`total :- ${total}, value :- ${value}`);
-  return total + value;
-}, 4);
+function ouputFun(value) {
+  return value % 2 == 0;
+}
 
-console.log(myValue);
+let out = myNum.filter(ouputFun);
+console.log(out);
+
+let arrayTwo = function (value) {
+  return value == "Sawan";
+};
+
+let outTwo = myArray.filter(arrayTwo);
+console.log(outTwo);
