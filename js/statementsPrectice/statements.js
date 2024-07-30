@@ -178,25 +178,39 @@
 // let finalOutput = `You have to pay \u20B9 ${final_bill} for ${quantity} - ${item}`;
 // console.log(finalOutput);
 
+// // exp
 
+// let toLower = prompt("Enter Name :- ");
+// let userInput = toLower.toLowerCase();
+
+// if (userInput == "sawan") {
+//   alert("Nisha");
+// } else if (userInput == "lokesh") {
+//   alert("Manisha");
+// } else if (userInput == "ratan"){
+//   alert("Indra");
+// } else if (userInput == "deshraj") {
+//   alert("Sonu");
+// }
+// else if (userInput == "ashok") {
+//   alert("Sonu");
+// }
+// else {
+//   alert("Invalid Inpur");
+// }
 
 // exp
 
-let toLower = prompt("Enter Name :- ");
-let userInput = toLower.toLowerCase();
+let student = ["Sawan", "Lokesh", "Kamlesh", "Deshraj"];
+let marks = [55, 84, 57, 62];
 
-if (userInput == "sawan") {
-  alert("Nisha");
-} else if (userInput == "lokesh") {
-  alert("Manisha");
-} else if (userInput == "ratan"){
-  alert("Indra");
-} else if (userInput == "deshraj") {
-  alert("Sonu");
-} 
-else if (userInput == "ashok") {
-  alert("Sonu");
-} 
-else {
-  alert("Invalid Inpur");
+let studentName = "";
+let studentMarks = "";
+
+for (let i = 0; i <= student.length; i++) {
+  studentName = student[i];
+  for (let j = 0; j <= i; j++) {
+    studentMarks = marks[i];
+  }
+  console.log(`Student Name :- ${studentName} = Marks :- ${studentMarks}`);
 }
