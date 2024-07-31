@@ -79,7 +79,7 @@
 // --l;
 // console.log(l);
 
-// --g;
+// ++g;
 // console.log(g);
 
 
@@ -169,11 +169,11 @@
 
 // console.log(b < a);
 
-// // vii. ( < ) 
+// // vii. ( >= ) 
 
 // console.log(c >= a);
 
-// // vii. ( < ) 
+// // vii. ( <= ) 
 
 // console.log(c <= b);
 

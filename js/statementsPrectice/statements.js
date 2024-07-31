@@ -1,23 +1,23 @@
 //  exp_1
-
-// let num1 = parseInt(prompt("Enter 1st Number"));
-// let num2 = parseInt(prompt("Enter 2nd Number"));
-// let operator = prompt("Enter Operator (+,-,*,/)");
+// let prompt = require("prompt-sync")();
+// let num1 = parseInt(prompt("Enter 1st Number :- "));
+// let num2 = parseInt(prompt("Enter 2nd Number :- "));
+// let operator = prompt("Enter Operator (+,-,*,/) :- ");
 // let output;
 
 // if (operator == "+") {
-//     output = num1 + num2;
+//   output = num1 + num2;
 // } else if (operator == "-") {
-//     output = num1 - num2;
+//   output = num1 - num2;
 // } else if (operator == "*") {
-//     output = num1 * num2;
+//   output = num1 * num2;
 // } else if (operator == "/") {
-//     output = num1 / num2;
+//   output = num1 / num2;
 // } else {
-//     console.log("Invalid Input");
+//   console.log("Invalid Input");
 // }
 
-// console.log( num1 + operator + num2 + "=" +  output);
+// console.log(`${num1}  ${operator}  ${num2}  =  ${output}`);
 
 //  exp_2
 
