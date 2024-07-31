@@ -5,6 +5,8 @@
 // let num = "Sawan";
 // console.log(isNaN(num));
 
+// boolean value deta hai
+
 // // 2. toString()
 
 // (1)

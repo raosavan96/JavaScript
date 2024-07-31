@@ -204,13 +204,13 @@
 let student = ["Sawan", "Lokesh", "Kamlesh", "Deshraj"];
 let marks = [55, 84, 57, 62];
 
-let studentName = "";
-let studentMarks = "";
+// let studentName = "";
+// let studentMarks = "";
 
-for (let i = 0; i <= student.length; i++) {
-  studentName = student[i];
-  for (let j = 0; j <= i; j++) {
-    studentMarks = marks[i];
-  }
-  console.log(`Student Name :- ${studentName} = Marks :- ${studentMarks}`);
-}
+// for (let i = 0; i <= student.length; i++) {
+//   studentName = student[i];
+//   for (let j = 0; j <= i; j++) {
+//     studentMarks = marks[i];
+//   }
+//   console.log(`Student Name :- ${studentName} = Marks :- ${studentMarks}`);
+// }
