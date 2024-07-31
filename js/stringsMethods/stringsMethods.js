@@ -27,7 +27,7 @@
 // console.log(startText.length);
 // console.log(startText);
 
-// // trimEnd trim 
+// // trimEnd trim
 
 // console.log(text.length);
 // let enttrim = text.trimEnd();
@@ -85,7 +85,6 @@
 
 // console.log(str[4]);
 
-
 // 9. split methods
 
 // y method string datatype ko array object me change kr deta h
@@ -94,16 +93,14 @@
 // let splitt = myText.split();
 // console.log(splitt);
 
+// // 9. includes methods
 
-// // 9. includes methods 
-
-// // y method strings me check krta h ky y word y later h ya ni or boolean value print krta h 
+// // y method strings me check krta h ky y word y later h ya ni or boolean value print krta h
 
 // let myText = "Kal ho na ho phir milenge chalte chalte";
 // let srt = myText.includes("ho");
 
 // console.log(srt);
-
 
 // 10. indexOf methods
 
@@ -111,14 +108,6 @@
 
 // let srt = myText.indexOf("fi");
 // console.log(srt);
-
-
-
-
-
-
-
-
 
 // // Teplate leterals in js
 
@@ -157,8 +146,6 @@
 // let output = `I am ${myName} my phone number ${myNum} and my profession ${myPro}`;
 // console.log(output);
 
-
-
 let myName = "Sawan";
 let midName = " Kumar";
 let lastName = " Yadav";
@@ -170,7 +157,7 @@ let textTr = "SAWAN KAMER YADAV";
 console.log(midName);
 console.log(myName.length);
 console.log(midName[2]);
-console.log(text.slice(4,6));
+console.log(text.slice(4, 6));
 console.log(textTwo.trim());
 console.log(textTwo.trimEnd());
 console.log(textTwo.trimStart());
