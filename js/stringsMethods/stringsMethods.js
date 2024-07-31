@@ -1,4 +1,4 @@
-// // Strings Strings Methods in JavaScripts
+// // Strings Strings Methods in JavaScriptss
 
 // // 1. length() methods
 
