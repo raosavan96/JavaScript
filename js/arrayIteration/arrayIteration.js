@@ -35,7 +35,7 @@
 
 // // exp_4  :-  ( forEach ) Array Iteration
 
-// - map iteration array ki value ko return nhi krta h
+// - forEach iteration array ki value ko return nhi krta h
 
 // let myArray = ["Dadi", "Ratan", "Sawan", "Lokesh", "Indra", "Nisha", "Manisha"];
 
@@ -115,22 +115,22 @@
 
 // console.log(myValue);
 
-// array iteration prectice
+// // array iteration prectice
 
-let promptInput = require("prompt-sync")();
-let myArray = promptInput("enter your input :- ");
+// let promptInput = require("prompt-sync")();
+// let myArray = promptInput("enter your input :- ");
 
-if (myArray <= 10) {
-  for (let i = 1; i <= myArray; i++) {
-    console.log(`hi number :- ${i}`);
-  }
-} else if (myArray > 10 && myArray <= 20) {
-  for (let i = 1; i <= myArray; i++) {
-    console.log(`by number :- ${i}`);
-  }
-} else {
-  console.log("Invalid Input");
-}
+// if (myArray <= 10) {
+//   for (let i = 1; i <= myArray; i++) {
+//     console.log(`hi number :- ${i}`);
+//   }
+// } else if (myArray > 10 && myArray <= 20) {
+//   for (let i = 1; i <= myArray; i++) {
+//     console.log(`by number :- ${i}`);
+//   }
+// } else {
+//   console.log("Invalid Input");
+// }
 
 // let myArray = ["sawan", "yadav", "lokesh","ratan", "mohit"];
 // let size = myArray.length;
@@ -170,7 +170,7 @@ if (myArray <= 10) {
 //   "Sawan",
 // ];
 
-// let myNum = [45, 1, 55, 54, 87, 4, 99, 101, 30, 7, 89, 100];
+let myNum = [45, 1, 55, 54, 87, 4, 99, 101, 30, 7, 89, 100];
 
 // function ouputFun(value) {
 //   return value % 2 == 0;
@@ -185,3 +185,29 @@ if (myArray <= 10) {
 
 // let outTwo = myArray.filter(arrayTwo);
 // console.log(outTwo);
+
+let myArray = [
+  "Dadi",
+  "Ratan",
+  "Sawan",
+  "Lokesh",
+  "Indra",
+  "Nisha",
+  "Manisha",
+  "Sonu",
+];
+
+// function myFun(value, index) {
+//   console.log(`value :- ${value}, index :- ${index}`);
+// }
+
+// myArray.forEach(myFun);
+// myArray.map((value, index) => {
+//   console.log(`value :- ${value}, index :- ${index}`);
+// });
+
+let output = myNum.filter((value) => {
+  return value % 2 == 0;
+});
+// 
+console.log(output);

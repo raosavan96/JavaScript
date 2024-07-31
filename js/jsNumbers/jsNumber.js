@@ -48,5 +48,6 @@
 // // 5. toFixed()
 
 // let a = 44.54545454;
+
 // let b = a.toFixed(2);
 // console.log(b);
