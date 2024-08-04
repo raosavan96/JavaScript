@@ -11,15 +11,15 @@
 // // exp_2
 
 // let h = 10;
-  
-// for (let i = 0; i <= h; i++) {
+
+// for (let i = 0; i <= h; i++) { 
 //   console.log(i);
 // }
 
 // // exp_3
 
 // let promptIn = require("prompt-sync")();
-// let userInput = promptIn("Eter Your input (0 - 20) :- ");
+// let userInput = prompt("Eter Your input (0 - 20) :- ");
 
 // if (userInput <= 10) {
 //   for (let i = 1; i <= userInput; i++) {
@@ -170,7 +170,7 @@
 //   "Sawan",
 // ];
 
-let myNum = [45, 1, 55, 54, 87, 4, 99, 101, 30, 7, 89, 100];
+// let myNum = [45, 1, 55, 54, 87, 4, 99, 101, 30, 7, 89, 100];
 
 // function ouputFun(value) {
 //   return value % 2 == 0;
@@ -186,16 +186,16 @@ let myNum = [45, 1, 55, 54, 87, 4, 99, 101, 30, 7, 89, 100];
 // let outTwo = myArray.filter(arrayTwo);
 // console.log(outTwo);
 
-let myArray = [
-  "Dadi",
-  "Ratan",
-  "Sawan",
-  "Lokesh",
-  "Indra",
-  "Nisha",
-  "Manisha",
-  "Sonu",
-];
+// let myArray = [
+//   "Dadi",
+//   "Ratan",
+//   "Sawan",
+//   "Lokesh",
+//   "Indra",
+//   "Nisha",
+//   "Manisha",
+//   "Sonu",
+// ];
 
 // function myFun(value, index) {
 //   console.log(`value :- ${value}, index :- ${index}`);
@@ -206,8 +206,8 @@ let myArray = [
 //   console.log(`value :- ${value}, index :- ${index}`);
 // });
 
-let output = myNum.filter((value) => {
-  return value % 2 == 0;
-});
-// 
-console.log(output);
+// let output = myNum.filter((value) => {
+//   return value % 2 == 0;
+// });
+// //
+// console.log(output);
