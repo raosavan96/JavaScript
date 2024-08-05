@@ -170,3 +170,25 @@ console.log(text.includes("milenge"));
 console.log(text.split());
 console.log(text.indexOf("chalte"));
 console.log(text.replaceAll("chalte", "haste"));
+
+
+
+
+
+
+
+
+// length
+// slice
+// split
+// concat
+// charAt
+// trim
+// trimStart
+// trimEnd
+// replace
+// replaceAll
+// indexOf
+// toLowerCase
+// toUpperCase
+// includes

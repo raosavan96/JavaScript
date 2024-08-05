@@ -5,7 +5,7 @@
 // let myArray = ["Sawan", "Yadav", "Web Developer", 23];
 // console.log(myArray);
 
-// // 2. array index checking
+// // 2. array index value checking
 
 // let marks = [97,26,88,66,57,82,51,84];
 // console.log(marks[7]);
@@ -82,7 +82,7 @@
 // myArray.unshift("Rohit");
 // console.log(myArray);
 
-// // 8. delete method in Array
+// 8. delete method in Array
 
 // let myArray = ["Sawan", "Yadav", "Web Developer", 23];
 
@@ -110,7 +110,7 @@
 
 // console.log(myArray);
 
-// // 11. short() methods in array
+// // 11. sort() methods in array
 
 // // array keys ko alpalater and num ko plhe print krta h
 
@@ -133,21 +133,27 @@
 // prectice array
 
 
-let myArray = ["sawan", "yadav", "web developer", 23, 41, "rao", 25, "akash", "aman"];
-let myArrayTow = ["kamlesh", "deshraj","kishan"];
-0
-console.log(myArray);
-console.log(myArray[1]);
-console.log(myArray.pop());
-console.log(myArray.push("ratan lal yadav"));
-console.log(myArray.shift());
-console.log(myArray.unshift("Nisha"));
-console.log(myArray.concat(myArrayTow));
-console.log(myArray.toString())
-console.log(myArray.join("="));
-console.log(myArrayTow.slice(1));
-console.log(myArray.splice(3,2,"new add"));
-console.log(myArray[1]="rekha");
-console.log(myArray.sort());
-console.log(myArray);
+// let myArray = ["sawan", "yadav", "web developer", 23, 41, "rao", 25, "akash", "aman"];
+// let myArrayTow = ["kamlesh", "deshraj","kishan"];
+// 0
+// console.log(myArray);
+// console.log(myArray[1]);
+// console.log(myArray.pop());
+// console.log(myArray.push("ratan lal yadav"));
+// console.log(myArray.shift());
+// console.log(myArray.unshift("Nisha"));
+// console.log(myArray.concat(myArrayTow));
+// console.log(myArray.toString())
+// console.log(myArray.join("="));
+// console.log(myArrayTow.slice(1));
+// console.log(myArray.splice(3,2,"new add"));
+// console.log(myArray[1]="rekha");
+// console.log(myArray.sort());
+// console.log(myArray);
 // console.log(myArrayTow);
+
+
+
+
+
+

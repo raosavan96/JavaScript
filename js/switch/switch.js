@@ -1,4 +1,4 @@
-let prompt = require("prompt-sync")();
+// let prompt = require("prompt-sync")();
 let smallText = prompt("Enter your job Type :- ");
 let userName = prompt("Enter your Name :- ");
 
