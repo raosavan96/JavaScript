@@ -133,21 +133,42 @@
 // prectice array
 
 
+// let myArray = ["sawan", "yadav", "web developer", 23, 41, "rao", 25, "akash", "aman"];
+// let myArrayTow = ["kamlesh", "deshraj","kishan"];
+// 0
+// console.log(myArray);
+// console.log(myArray[1]);
+// console.log(myArray.pop());
+// console.log(myArray.push("ratan lal yadav"));
+// console.log(myArray.shift());
+// console.log(myArray.unshift("Nisha"));
+// console.log(myArray.concat(myArrayTow));
+// console.log(myArray.toString())
+// console.log(myArray.join("="));
+// console.log(myArrayTow.slice(1));
+// console.log(myArray.splice(3,2,"new add"));
+// console.log(myArray[1]="rekha");
+// console.log(myArray.sort());
+// console.log(myArray);
+// // console.log(myArrayTow);
+
+
+
 let myArray = ["sawan", "yadav", "web developer", 23, 41, "rao", 25, "akash", "aman"];
-let myArrayTow = ["kamlesh", "deshraj","kishan"];
-0
-console.log(myArray);
-console.log(myArray[1]);
-console.log(myArray.pop());
-console.log(myArray.push("ratan lal yadav"));
-console.log(myArray.shift());
-console.log(myArray.unshift("Nisha"));
-console.log(myArray.concat(myArrayTow));
+
+// console.log(myArray.length);
+// console.log(myArray.slice(1,3))
+
+// let shift = myArray.unshift("unshift")
+// console.log(myArray)
+// let out = myArray[1] = "Rao"
+ 
+// let out = myArray.slice(3)
+
+// myArray.sort()
+// let out = myArray.splice(2, 1, "frontend dev")
+let out = myArray.toString()
+console.log(out)
 console.log(myArray.toString())
-console.log(myArray.join("="));
-console.log(myArrayTow.slice(1));
-console.log(myArray.splice(3,2,"new add"));
-console.log(myArray[1]="rekha");
-console.log(myArray.sort());
-console.log(myArray);
-// console.log(myArrayTow);
+
+

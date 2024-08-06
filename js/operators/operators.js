@@ -56,11 +56,11 @@
 
 // // i. Increment Operator
 
-// let g = 29;
-// let l = 20;
+let g = 9;
+let l = 20;
 
-// g++;
-// console.log(g);
+g++;
+console.log(g);
 
 // // ii. Decrement Operator
 // g--;

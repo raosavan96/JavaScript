@@ -71,9 +71,9 @@
 
 // // all text replece methods
 
-// let myText = "Kal ho na ho phir milenge chalte chalte";
-// let upText = myText.replaceAll("chalte", "haste");
-// console.log(upText);
+let myText = "Kal ho na ho phir milenge chalte Chalte";
+let upText = myText.replaceAll(/chalte/gi, "haste");
+console.log(upText);
 
 // // 8. charAt() methods
 
@@ -90,7 +90,7 @@
 // y method string datatype ko array object me change kr deta h
 
 // let myText = "Kal ho na ho phir milenge chalte chalte";
-// let splitt = myText.split();
+// let splitt = myText.split( );
 // console.log(splitt);
 
 // // 9. includes methods
@@ -146,27 +146,43 @@
 // let output = `I am ${myName} my phone number ${myNum} and my profession ${myPro}`;
 // console.log(output);
 
-let myName = "Sawan";
-let midName = " Kumar";
-let lastName = " Yadav";
-let age = 23;
-let text = "kal or milenge chalte chalte";
-let textTwo = "     Rao shab";
-let textTr = "SAWAN KAMER YADAV";
+// let myName = "Sawan";
+// let midName = " Kumar";
+// let lastName = " Yadav";
+// let age = 23;
+// let text = "kal or milenge chalte chalte";
+// let textTwo = "     Rao shab";
+// let textTr = "SAWAN KAMER YADAV";
 
-console.log(midName);
-console.log(myName.length);
-console.log(midName[2]);
-console.log(text.slice(4, 6));
-console.log(textTwo.trim());
-console.log(textTwo.trimEnd());
-console.log(textTwo.trimStart());
-console.log(myName.toUpperCase());
-console.log(textTr.toLowerCase());
-console.log(myName.concat(midName, lastName));
-console.log(myName.replace("Sawan", "Rao Sawan"));
-console.log(lastName.charAt(3));
-console.log(text.includes("milenge"));
-console.log(text.split());
-console.log(text.indexOf("chalte"));
-console.log(text.replaceAll("chalte", "haste"));
+// console.log(midName);
+// console.log(myName.length);
+// console.log(midName[2]);
+// console.log(text.slice(4, 6));
+// console.log(textTwo.trim());
+// console.log(textTwo.trimEnd());
+// console.log(textTwo.trimStart());
+// console.log(myName.toUpperCase());
+// console.log(textTr.toLowerCase());
+// console.log(myName.concat(midName, lastName));
+// console.log(myName.replace("Sawan", "Rao Sawan"));
+// console.log(lastName.charAt(3));
+// console.log(text.includes("milenge"));
+// console.log(text.split());
+// console.log(text.indexOf("chalte"));
+// console.log(text.replaceAll("chalte", "haste"));
+
+
+// length .lenght()
+// trim .trim()
+// trimStart .trimStart()
+// trimEnd .trimEnd()
+// slice .slice(4,9)
+// concat .concat(num2)
+// replace .replace("s", "h")
+// replaceAll .replaceAll("h", "s")
+// toUpperCase .toUpperCase()
+// toLowerCase .toLowerCase()
+// inclued .inclued("y")
+// indexOf .indexOf("h")
+// split .split( )
+// charAt .charAt(5)
