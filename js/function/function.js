@@ -52,3 +52,26 @@ let mySur = () => {
 };
 
 mySur();
+
+
+
+
+function myDeFun() {
+  console.log("img function");
+  
+}
+
+myDeFun();
+
+let experFun = function () {
+  console.log("i am exp function");
+  
+}
+ experFun();
+
+ const arrwFunn = () => {
+  console.log("i am arrow function");
+  
+ }
+
+ arrwFunn();

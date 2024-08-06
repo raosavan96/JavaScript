@@ -5,7 +5,7 @@
 // let myArray = ["Sawan", "Yadav", "Web Developer", 23];
 // console.log(myArray);
 
-// // 2. array index checking
+// // 2. array index value checking
 
 // let marks = [97,26,88,66,57,82,51,84];
 // console.log(marks[7]);
@@ -82,7 +82,7 @@
 // myArray.unshift("Rohit");
 // console.log(myArray);
 
-// // 8. delete method in Array
+// 8. delete method in Array
 
 // let myArray = ["Sawan", "Yadav", "Web Developer", 23];
 
@@ -110,7 +110,7 @@
 
 // console.log(myArray);
 
-// // 11. short() methods in array
+// // 11. sort() methods in array
 
 // // array keys ko alpalater and num ko plhe print krta h
 
@@ -150,6 +150,7 @@
 // console.log(myArray[1]="rekha");
 // console.log(myArray.sort());
 // console.log(myArray);
+<<<<<<< HEAD
 // // console.log(myArrayTow);
 
 
@@ -170,5 +171,12 @@ let myArray = ["sawan", "yadav", "web developer", 23, 41, "rao", 25, "akash", "a
 let out = myArray.toString()
 console.log(out)
 console.log(myArray.toString())
+=======
+// console.log(myArrayTow);
+
+
+
+
+>>>>>>> a6a7ee3ebcff00f8bb47b3ab9bae955e47812cbc
 
 

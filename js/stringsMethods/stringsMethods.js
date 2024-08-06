@@ -154,6 +154,7 @@ console.log(upText);
 // let textTwo = "     Rao shab";
 // let textTr = "SAWAN KAMER YADAV";
 
+<<<<<<< HEAD
 // console.log(midName);
 // console.log(myName.length);
 // console.log(midName[2]);
@@ -186,3 +187,43 @@ console.log(upText);
 // indexOf .indexOf("h")
 // split .split( )
 // charAt .charAt(5)
+=======
+console.log(midName);
+console.log(myName.length);
+console.log(midName[2]);
+console.log(text.slice(4, 6));
+console.log(textTwo.trim());
+console.log(textTwo.trimEnd());
+console.log(textTwo.trimStart());
+console.log(myName.toUpperCase());
+console.log(textTr.toLowerCase());
+console.log(myName.concat(midName, lastName));
+console.log(myName.replace("Sawan", "Rao Sawan"));
+console.log(lastName.charAt(3));
+console.log(text.includes("milenge"));
+console.log(text.split());
+console.log(text.indexOf("chalte"));
+console.log(text.replaceAll("chalte", "haste"));
+
+
+
+
+
+
+
+
+// length
+// slice
+// split
+// concat
+// charAt
+// trim
+// trimStart
+// trimEnd
+// replace
+// replaceAll
+// indexOf
+// toLowerCase
+// toUpperCase
+// includes
+>>>>>>> a6a7ee3ebcff00f8bb47b3ab9bae955e47812cbc
