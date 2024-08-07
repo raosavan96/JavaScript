@@ -35,28 +35,46 @@
 
 // (this) key word current contex ko target krta h
 
-const myObj = {
-  id: "raosawan",
-  name: "Sawan Kumar Yadav",
-  email: "savanyadav377@gmail.com",
+// const myObj = {
+//   id: "raosawan",
+//   name: "Sawan Kumar Yadav",
+//   email: "savanyadav377@gmail.com",
 
+//   add: {
+//     vill: "Bhojyara",
+//     th: "Chaksu",
+//     pin: 303903,
+//     dis: "Jaipur",
+//   },
+//   phone: 9636447793,
+//   objFun: function () {
+//     console.log(
+//       "id :- " +
+//         this.id +
+//         ", name :- " +
+//         this.name +
+//         ", address :- " +
+//         this.add.dis
+//     );
+//   },
+// };
+
+// myObj.objFun();
+
+myObj = {
+  id: 1,
+  myName: "Sawan Kumar Yadav",
+  mob: 9636447793,
   add: {
     vill: "Bhojyara",
     th: "Chaksu",
     pin: 303903,
-    dis: "Jaipur",
   },
-  phone: 9636447793,
-  objFun: function () {
+  funObj: function () {
     console.log(
-      "id :- " +
-        this.id +
-        ", name :- " +
-        this.name +
-        ", address :- " +
-        this.add.dis
+      `my id :- ${this.id}, name :- ${this.myName}, pincode. :- ${this.add.pin}`
     );
   },
 };
 
-myObj.objFun();
+myObj.funObj();

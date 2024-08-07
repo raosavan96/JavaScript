@@ -4,15 +4,16 @@
 
 // let myArray = ["Dadi", "Ratan", "Sawan", "Lokesh", "Indra", "Nisha", "Manisha"];
 
-// for (let i = 0; i <= myArray.length; i++) {
-//   console.log(myArray[i]);
+// for (let i = 0; i < myArray.length; i++) {
+//     console.log(myArray[i]);
+
 // }
 
 // // exp_2
 
 // let h = 10;
 
-// for (let i = 0; i <= h; i++) { 
+// for (let i = 0; i <= h; i++) {
 //   console.log(i);
 // }
 
@@ -41,11 +42,11 @@
 
 // // (1)
 
-// // function myFun(value, index) {
-// //   console.log(`value :- ${value}, index :- ${index}`);
-// // }
+// function myFun(value, index) {
+//   console.log(`value :- ${value}, index :- ${index}`);
+// }
 
-// // myArray.forEach(myFun);
+// myArray.forEach(myFun);
 
 // // (2)
 
@@ -211,3 +212,23 @@
 // });
 // //
 // console.log(output);
+
+// let myArray = [
+//   "Dadi",
+//   "Ratan",
+//   "Sawan",
+//   "Lokesh",
+//   "Indra",
+//   "Nisha",
+//   "Manisha",
+//   "sonu",
+// ];
+
+// let myNum = [45, 1, 55, 54, 87, 4, 99, 101, 30, 7, 89, 100];
+
+// function myFun(value) {
+//   return value % 2 == 0;
+// }
+
+// let out = myNum.filter(myFun);
+// console.log(out);

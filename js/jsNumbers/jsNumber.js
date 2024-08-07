@@ -4,7 +4,6 @@
 
 // let num = "Sawan";
 // console.log(isNaN(num));
-
 // boolean value deta hai
 
 // // 2. toString()
@@ -53,3 +52,21 @@
 
 // let b = a.toFixed(2);
 // console.log(b);
+
+// let num = "yadav";
+// console.log(isNaN(num))
+
+// let toStringg = 57878;
+// console.log(String(toStringg));
+// console.log(toStringg.toString());
+
+// let parseIntt = "5665465";
+
+// console.log(parseInt(parseIntt))
+
+
+let parFlotn = 54.54566;
+
+console.log(parseFloat(parFlotn));
+console.log(parFlotn.toFixed(2));
+
