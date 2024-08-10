@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date in javaScript</title>
+</head>
+
+<body>
+
+    <h1 id="my_id"></h1>
+
+    <script src="date.js"></script>
+    <script>
+        let arrowFun = () => {
+            let currentDate = new Date();
+            let allDay = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
+            let dayIndex = currentDate.getDay();
+            let toDay = allDay[dayIndex];
+            let year = currentDate.getFullYear();
+            let month = currentDate.getMonth()+1;
+            let date = currentDate.getDate();
+            let hours = currentDate.getHours();
+            let second = currentDate.getSeconds();
+            let minutes = currentDate.getMinutes();
+            let allDate = `${date}/${month}/${year} - Day :- ${toDay}, ${hours}:${minutes}:${second}`
+
+            document.getElementById("my_id").innerHTML = allDate;
+
+        }
+
+        setInterval(arrowFun, 1000);
+    </script>
+</body>
+
+</html>
