@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnChange Event in JavaScript</title>
+</head>
+
+<body>
+
+    <select id="opn" onchange="myfun()">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="jquary">Jquary</option>
+        <option value="javascript">JavaScript</option>
+    </select>
+
+    <p id="my_id"></p>
+
+    <script>
+        let myfun = () => {
+            let a = document.getElementById("opn").value;
+            document.getElementById("my_id").innerHTML = "Select Options : - " + a;
+        }
+    </script>
+
+</body>
+
+</html>
