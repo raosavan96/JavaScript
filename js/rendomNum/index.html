@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendom Number Creacte</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .main {
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 10px solid #ccc;
+            border-bottom: 10px solid cornflowerblue;
+            transform: rotate();
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main d-flex justify-content-center align-items-center">
+        <div class="circle mb-5">
+
+        </div>
+        <a href="#"  class="btn btn-warning click_btn">Click</a>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(document).on("click", ".click_btn", function () {
+                $(".circle").css("transform", "rotate(0deg)");
+                $(".circle").css("transition", "0.000001s");
+
+                setTimeout(function () {
+                    let max = 10000;
+                    let rendomNum = Math.floor(Math.random() * max);
+
+                    $(".circle").css("transform", `rotate(${rendomNum}deg)`);
+                    $(".circle").css("transition", "5s");
+                }, 50);
+            });
+
+            // let arrowFun = (() => {
+
+            // })
+        });
+    </script>
+</body>
+
+</html>
