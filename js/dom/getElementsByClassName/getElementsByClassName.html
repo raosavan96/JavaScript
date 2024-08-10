@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Elements By ClassName (Dom)</title>
 </head>
+
 <body>
-    
-    <h1 class="classs"></h1>
+
+    <h1 class="classs">1</h1>
+    <h1 class="classs">2</h1>
+
+    <h1 class="classs">3</h1>
+    <h2 class="classs">4</h2>
+
 
     <script>
-        document.getElementsByClassName("classs")[0].innerHTML = "Get Elements By ClassName"
+        let a = document.getElementsByClassName("classs")[2].innerText = "Get Elements By ClassName";
+        console.log(a);
+
     </script>
 </body>
+
 </html>
