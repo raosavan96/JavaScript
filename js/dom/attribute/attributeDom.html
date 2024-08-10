@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom by attributes Target</title>
+
+    <style>
+        button {
+            background: cornflowerblue;
+            color: #fff;
+            padding: 20px 40px;
+            border-radius: 15px;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <img width="400" src="img/ram1.png" alt="" id="my_img"> -->
+
+    <button id="my_btnn" onclick="colFun()">Img Change btn</button>
+
+    <script>
+        // (1)
+
+        function myFun() {
+            document.getElementById("my_img").attributes[1].value = 'img/ram2.png';
+        }
+
+        // (2)
+
+        function colFun() {
+            let a = document.getElementById("my_btnn").style.backgroundColor = "Black";
+            console.log(a);
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
