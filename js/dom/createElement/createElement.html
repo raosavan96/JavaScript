@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateElement, createTextNode, appendChild</title>
+</head>
+
+<body>
+
+    <script>
+        //  1. create tag  (createElement)    
+
+        let h1 = document.createElement("h1");
+
+        // 2. create contentText (createTextNode)
+
+        let contentText = document.createTextNode("Sawan Kumar Yadav");
+
+        // 3. content ko child me bhejna (appendChild)
+
+        h1.appendChild(contentText);
+
+        // 4. content ko body me bhejna (.body.appendChild)
+
+        document.body.appendChild(h1);
+    </script>
+
+
+</body>
+
+</html>
