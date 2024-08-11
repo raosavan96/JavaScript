@@ -8,13 +8,19 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>1</h1>
+    <h1>2</h1>
+    <h1>3</h1>
+    <h1>4</h1>
 
     <script>
-        let myName = "Sawan Kumar Yadav";
-        let a = document.getElementsByTagName("h1")[0].innerText = myName;
-        console.log(a);
+        let tagName = "Get Elements Select By Tagname";
 
+        let a = document.getElementsByTagName("h1")[3].innerText = tagName;
+        console.log(a);
+        
+
+        document.getElementsByTagName("h1")[3].style.color = "Red"
     </script>
 </body>
 

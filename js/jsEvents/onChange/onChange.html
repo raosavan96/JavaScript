@@ -9,22 +9,72 @@
 
 <body>
 
-    <select id="opn" onchange="myfun()">
+    <select name="" id="mySelect" onchange="myFun()">
         <option value="html">HTML</option>
         <option value="css">CSS</option>
         <option value="jquary">Jquary</option>
         <option value="javascript">JavaScript</option>
+        <option value="reactjs">reactJs</option>
+        <option value="figma">Figma</option>
+        <option value="photoshop">Photoshop</option>
     </select>
 
-    <p id="my_id"></p>
+
+    <h1 id="selectOut"></h1>
 
     <script>
-        let myfun = () => {
-            let a = document.getElementById("opn").value;
-            document.getElementById("my_id").innerHTML = "Select Options : - " + a;
-        }
+        function myFun() {
+            let a = document.getElementById("mySelect").value
+            document.getElementById("selectOut").innerText = a;
+            console.log(a);
+        }    
     </script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<select id="opn" onchange="myfun()">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="jquary">Jquary</option>
+    <option value="javascript">JavaScript</option>
+</select>
+
+<p id="my_id"></p>
+
+<script>
+    let myfun = () => {
+        let a = document.getElementById("opn").value;
+        document.getElementById("my_id").innerHTML = "Select Options : - " + a;
+    }
+</script> -->
