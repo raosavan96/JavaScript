@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quary Selector In javaScript (Dom)</title>
+</head>
+
+<body>
+    <h1>hy</h1>
+    <h1>By</h1>
+    <h1>hi</h1>
+    <h1>My</h1>
+    <h2>Hello</h2>
+    <h2>Yellow</h2>
+
+
+    <script>
+
+        // (1) quarySelector - y jis element ko target kiya h useme se  first element ko targert krta h 
+
+        let a = document.querySelector("h1").innerText = "Sawan";
+        console.log(a);
+
+        // (2) quarySecetorAll - y jis element ko target kiya h useme se Sbhi element ko target krta h useme se index se target kr skte h
+
+        let b = document.querySelectorAll("h1")[2].innerText = "Rao";
+        console.log(b);
+
+
+
+    </script>
+</body>
+
+</html>
