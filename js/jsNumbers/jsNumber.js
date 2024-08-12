@@ -53,6 +53,23 @@
 // let b = a.toFixed(2);
 // console.log(b);
 
+// 6. BigInt()
+
+// 1 se 15 tak hi javaScript Number shi btata h agr 15 se jyada lena h to BigInt () lete h
+
+// let bigInt = BigInt(34987983475938759837598375);
+// console.log(bigInt);
+
+
+// 7. .toPrecision() - jitne number chay bo de do
+
+let num = 2343.34235345;
+let a = num.toPrecision(5)
+console.log(a);
+
+
+
+
 // let num = "yadav";
 // console.log(isNaN(num))
 
@@ -65,8 +82,8 @@
 // console.log(parseInt(parseIntt))
 
 
-let parFlotn = 54.54566;
+// let parFlotn = 54.54566;
 
-console.log(parseFloat(parFlotn));
-console.log(parFlotn.toFixed(2));
+// console.log(parseFloat(parFlotn));
+// console.log(parFlotn.toFixed(2));
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation with javaScript</title>
+</head>
+
+<body>
+    <form action="" onsubmit=" return myFun() ">
+        <label for="">Enter your Name :- <span>*</span></label>
+        <input type="text">
+        <label for="">password :- <span>*</span></label>
+        <input type="password" name="" id="pass"><br>
+        <label for="">confirm password :- <span>*</span></label>
+        <input type="text" name="" id="conpass">
+        <p style="color: red;" id="error"></p>
+        <input type="submit" value="submit Form" />
+    </form>
+
+    <script>
+        let myFun = () => {
+            let a = document.getElementsByTagName("input")[0].value;
+
+            let norpass = document.getElementById("pass").value;
+
+            let conpassw = document.getElementById("conpass").value;
+
+            if (norpass !== conpassw) {
+                starRed()
+                return false;
+            }
+
+            if (norpass == "") {
+                starRed()
+                return false;
+            }
+            if (conpassw == "") {
+                starRed();
+                inputInv();
+                return false;
+            }
+
+            if (a == "") {
+                inputInv();
+                return false;
+            }
+
+            if (norpass == "") {
+                inputInv();
+                return false;
+            }
+            if (conpassw == "") {
+                inputInv();
+                return false;
+            }
+
+            if (a.trim() == "") {
+                starRed()
+                // alert("dont use space")
+                return false;
+            }
+
+            function inputInv() {
+                return document.getElementById("error").innerText = "Plese this input fild";
+            }
+
+            function starRed() {
+                return document.querySelectorAll("span")[1].style.color = "red";
+
+                // document.querySelectorAll("span")[1].style.color = "red";
+
+                // document.querySelectorAll("span")[2].style.color = "red";
+            }
+
+            if (a.length < 5) {
+                document.getElementById("error").innerText = "Plese enter input greater 5";
+                return false;
+
+            }
+        }        
+    </script>
+</body>
+
+</html>
