@@ -1,86 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation with javaScript</title>
-</head>
+  </head>
 
-<body>
-    <form action="" onsubmit=" return myFun() ">
+  <body>
+    <div class="form_sec">
+      <form action="" onsubmit=" return myFun() ">
         <label for="">Enter your Name :- <span>*</span></label>
-        <input type="text">
-        <label for="">password :- <span>*</span></label>
-        <input type="password" name="" id="pass"><br>
-        <label for="">confirm password :- <span>*</span></label>
-        <input type="text" name="" id="conpass">
-        <p style="color: red;" id="error"></p>
+        <input type="text" /><br />
+        <label for="">Password :- <span>*</span></label>
+        <input type="password" name="" id="pass" /><br />
+        <label for="">Confirm Password :- <span>*</span></label>
+        <input type="text" name="" id="conpass" />
+        <p style="color: red" id="error"></p>
         <input type="submit" value="submit Form" />
-    </form>
+      </form>
+    </div>
 
     <script>
-        let myFun = () => {
-            let a = document.getElementsByTagName("input")[0].value;
+      let myFun = () => {
+        let userName = document.getElementsByTagName("input")[0].value;
 
-            let norpass = document.getElementById("pass").value;
+        let norpass = document.getElementById("pass").value;
 
-            let conpassw = document.getElementById("conpass").value;
+        let conpassw = document.getElementById("conpass").value;
 
-            if (norpass !== conpassw) {
-                starRed()
-                return false;
-            }
+        if (userName == "") {
+          document.getElementById("error").innerText = "Plese input flid 1";
+          errorStar1();
+          return false;
+        }
+        if (norpass == "") {
+          document.getElementById("error").innerText = "Plese input flid 2";
+          errorStar2();
+          return false;
+        }
+        if (conpassw == "") {
+          document.getElementById("error").innerText = "Plese input flid 3";
+          errorStar3();
+          return false;
+        }
 
-            if (norpass == "") {
-                starRed()
-                return false;
-            }
-            if (conpassw == "") {
-                starRed();
-                inputInv();
-                return false;
-            }
+        if (norpass !== conpassw) {
+          errorStar3();
+          document.getElementById("error").innerText =
+            "Your password not match";
+          return false;
+        }
+      };
 
-            if (a == "") {
-                inputInv();
-                return false;
-            }
-
-            if (norpass == "") {
-                inputInv();
-                return false;
-            }
-            if (conpassw == "") {
-                inputInv();
-                return false;
-            }
-
-            if (a.trim() == "") {
-                starRed()
-                // alert("dont use space")
-                return false;
-            }
-
-            function inputInv() {
-                return document.getElementById("error").innerText = "Plese this input fild";
-            }
-
-            function starRed() {
-                return document.querySelectorAll("span")[1].style.color = "red";
-
-                // document.querySelectorAll("span")[1].style.color = "red";
-
-                // document.querySelectorAll("span")[2].style.color = "red";
-            }
-
-            if (a.length < 5) {
-                document.getElementById("error").innerText = "Plese enter input greater 5";
-                return false;
-
-            }
-        }        
+      function errorStar1() {
+        return (document.getElementsByTagName("span")[0].style.color = "red");
+      }
+      function errorStar2() {
+        return (document.getElementsByTagName("span")[1].style.color = "red");
+      }
+      function errorStar3() {
+        return (document.getElementsByTagName("span")[2].style.color = "red");
+      }
     </script>
-</body>
-
+  </body>
 </html>
