@@ -9,7 +9,7 @@
   <body>
     <div class="form_sec">
       <form action="" onsubmit=" return myFun() ">
-        <label for="">Enter your Name :- <span>*</span></label>
+        <label for="">User Id :- <span>*</span></label>
         <input type="text" /><br />
         <label for="">Password :- <span>*</span></label>
         <input type="password" name="" id="pass" /><br />
@@ -29,17 +29,17 @@
         let conpassw = document.getElementById("conpass").value;
 
         if (userName == "") {
-          document.getElementById("error").innerText = "Plese input flid 1";
+          document.getElementById("error").innerText = "Plese input field 1";
           errorStar1();
           return false;
         }
         if (norpass == "") {
-          document.getElementById("error").innerText = "Plese input flid 2";
+          document.getElementById("error").innerText = "Plese input field 2";
           errorStar2();
           return false;
         }
         if (conpassw == "") {
-          document.getElementById("error").innerText = "Plese input flid 3";
+          document.getElementById("error").innerText = "Plese input field 3";
           errorStar3();
           return false;
         }
@@ -48,6 +48,14 @@
           errorStar3();
           document.getElementById("error").innerText =
             "Your password not match";
+          return false;
+        }
+
+        if (norpass.length <= 8) {
+          document.getElementById("error").innerText =
+            "plese enter minimum 8 character";
+          errorStar2();
+          errorStar3();
           return false;
         }
       };
