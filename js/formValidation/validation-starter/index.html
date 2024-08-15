@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation - Easy Tutorials YouTube Channel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <i class="fas fa-paper-plane"></i>
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="name_id"
+            onkeyup="validateName()"
+          />
+          <span id="name_error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Phone No.</label>
+          <input type="tel" placeholder="123 456 7890" id="phone_id"
+          onkeyup="validatePhone()"/>
+          <span id="phone_error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Email Id</label>
+          <input type="email" placeholder="Enter Email" id="email_id"
+          onkeyup="validateEmail()"/>
+          <span id="email_error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Your Message</label>
+          <textarea rows="5" placeholder="Enter your message" id="mass_id"
+          onkeyup="validateMass()"></textarea>
+          <span id="mass_error"> </span>
+        </div>
+
+        <button onclick="return validateForm()">Submit</button>
+
+        <span id="submit_error"></span>
+      </form>
+
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>

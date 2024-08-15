@@ -58,6 +58,12 @@
           errorStar3();
           return false;
         }
+
+        if (userName.trim() == " ") {
+          errorStar1();
+          document.getElementById("error").innerText = "Plese don't use spaces";
+          return false;
+        }
       };
 
       function errorStar1() {
