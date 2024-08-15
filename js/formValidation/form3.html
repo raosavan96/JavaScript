@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <style>
+      body {
+        background-color: #000;
+      }
+      .form_sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+      }
+      form {
+        width: 400px;
+        padding: 20px;
+      }
+
+      #error {
+        color: red !important;
+      }
+
+      label {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form_sec"> 
+        <p id="error"></p>
+      <form action="">
+        <label for="" class="form-label">Name <span>*</span></label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="username"
+          onkeyup="nameValidation()"
+        />
+
+        <label for="" class="form-label mt-3">Phone <span>*</span></label>
+        <input
+          type="text"
+          name=""
+          class="form-control"
+          id="userphone"
+          onkeyup="phoneValidate()"
+        />
+
+        <label for="" class="form-label mt-3">Email</label>
+        <input
+          type="text"
+          class="form-control"
+          id="useremail"
+          onkeyup="emailValidation()"
+        />
+       
+      </form>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <script>
+      let nameError = document.getElementById("error");
+
+      function nameValidation() {
+        let userName = document.getElementById("username").value;
+
+        if (userName.length == 0) {
+          nameError.innerText = "Name is required";
+          redStar1();
+          return false;
+        }
+
+        if (!userName.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+          nameError.innerText = "White full name";
+          redStar1();
+          return false;
+        }
+
+        nameError.innerText = "valid";
+        redStar1w();
+        return true;
+      }
+
+      function phoneValidate() {
+        let userPhone = document.getElementById("userphone").value;
+
+        if (userPhone.length == 0) {
+          nameError.innerText = "Phone is required";
+          redStar2();
+          return false;
+        }
+
+        if (userPhone.length !== 10) {
+          nameError.innerText = "Phone no should be 10 digits required";
+          redStar2();
+          return false;
+        }
+
+        if (!userPhone.match(/^[0-9]{10}$/)) {
+          nameError.innerText = "Invalid Phone Number";
+          redStar2();
+          return false;
+        }
+
+        nameError.innerText = "valid";
+        redStar2w();
+        return true;
+      }
+
+      function emailValidation() {
+        let userEmail = document.getElementById("useremail").value;
+
+        if (userEmail.length == 0) {
+          nameError.innerText = "Email is required";
+          redStar3();
+          return false;
+        }
+
+        if (
+          !userEmail.match(
+            /^[A-Za-z0-9._%+-]+@[A-Za-z0-9._%+-]+\.[A-Za-z]{2,4}$/
+          )
+        ) {
+          nameError.innerText = "Invalid Email";
+          redStar3();
+          return false;
+        }
+
+        nameError.innerText = "valid";
+        redStar3w();
+        return false;
+      }
+
+      function redStar1() {
+        return (document.getElementsByTagName("span")[0].style.color = "red");
+      }
+
+      function redStar1w() {
+        return (document.getElementsByTagName("span")[0].style.color = "#fff");
+      }
+
+      function redStar2() {
+        return (document.getElementsByTagName("span")[1].style.color = "red");
+      }
+
+      function redStar2w() {
+        return (document.getElementsByTagName("span")[1].style.color = "#fff");
+      }
+
+      function redStar3() {
+        return (document.getElementsByTagName("span")[2].style.color = "red");
+      }
+
+      function redStar3w() {
+        return (document.getElementsByTagName("span")[2].style.color = "#fff");
+      }
+    </script>
+  </body>
+</html>
