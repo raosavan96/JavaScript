@@ -9,9 +9,8 @@
     <button id="btn">alert</button>
     <button id="date-show">date</button>
 
-
-    <script> 
-    // (1)
+    <script>
+      // (1)
       function myfun() {
         alert("Hello World");
       }
@@ -21,10 +20,12 @@
 
       document.getElementById("date-show").addEventListener("click", () => {
         let date = new Date();
-        let newDate = date.toLocaleString()
+        let newDate = date.toLocaleString();
         document.write(newDate);
       });
+      
 
+    
     </script>
   </body>
 </html>
