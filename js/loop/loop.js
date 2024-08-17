@@ -35,7 +35,6 @@
 
 // }
 
-
 // * loop stop krna
 
 // let myArray = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -48,16 +47,21 @@
 
 // }
 
+// // loop continue krna
 
-// loop continue krna
+// let myArray = [1, 2, 3, 4, 5, 6, 7, 8];
 
-let myArray = [1, 2, 3, 4, 5, 6, 7, 8];
+// for (let i = 0; i < myArray.length; i++) {
+//     if (i === 3) {
+//         continue;
+//     }
+//     console.log(myArray[i]);
 
-for (let i = 0; i < myArray.length; i++) {
-    if (i === 3) {
-        continue;
-    }
-    console.log(myArray[i]);
+// }
 
+let userInput = parseInt(prompt("Enter tabel number :- "));
+let i = 0;
+while (i < 10) {
+  i++;
+  console.log(i * userInput);
 }
-
