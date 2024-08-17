@@ -28,8 +28,17 @@
 
 // 3. delete()
 
-let mySets = new Set(["Sawan", "Yadav", "Lokesh", "Nisha", "Manisha"]);
+// let mySets = new Set(["Sawan", "Yadav", "Lokesh", "Nisha", "Manisha"]);
 
-mySets.delete("Sawan");
+// mySets.delete("Sawan");
 
+// console.log(mySets);
+
+// precatice
+
+let mySets = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
+let a = mySets.has(4);
+mySets.add(11);
+mySets.delete(5);
+console.log(a);
 console.log(mySets);
