@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Fetch in JavaScript</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <style>
+      .card {
+        height: 400px;
+      }
+      .card img {
+        width: 60%;
+        height: 60%;
+        margin: auto;
+      }
+
+      .card p {
+        font-size: 10px;
+      }
+
+      .card h5 {
+        font-size: 13px;
+      }
+
+      .card a {
+        padding: 5px;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="" id="img_id" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h5 class="card-title" id="titel"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="" id="img_id" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h5 class="card-title" id="titel"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="" id="img_id" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h5 class="card-title" id="titel"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="" id="img_id" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h5 class="card-title" id="titel"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="" id="img_id" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h5 class="card-title" id="titel"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="" id="img_id" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h5 class="card-title" id="titel"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <script src="apiFetch.js"></script>
+
+    <script>
+      //  (1)
+
+      // async function myFun() {
+      //   try {
+      //     let result = await fetch("https://dummyjson.com/products/");
+      //     let data = await result.json();
+      //     console.log(data);
+
+      //     let card = document.querySelectorAll(".card");
+
+      //     card.forEach((value, index) => {
+      //       value.getElementsByTagName("h5")[0].innerText =
+      //         data.products[index].title;
+      //       value.getElementsByTagName("p")[0].innerText =
+      //         data.products[index].description;
+      //       value.getElementsByTagName("img")[0].attributes[0].value =
+      //         data.products[index].images;
+      //     });
+      //   } catch (error) {
+      //     console.log(error);
+      //   }
+      // }
+
+      // myFun();
+
+      //   (2)
+
+      fetch("https://dummyjson.com/products/")
+        .then((result) => {
+          return result.json();
+        })
+        .then((data) => {
+          console.log(data);
+
+          let card = document.querySelectorAll(".card");
+
+          card.forEach((value, index) => {
+            value.getElementsByTagName("h5")[0].innerText =
+              data.products[index].title;
+            value.getElementsByTagName("p")[0].innerText =
+              data.products[index].description;
+            value.getElementsByTagName("img")[0].attributes[0].value =
+              data.products[index].images;
+          });
+        });
+    </script>
+  </body>
+</html>
