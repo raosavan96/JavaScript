@@ -33,17 +33,30 @@
 
       // (2)
 
-      let a = 1;
+      // let a = 1;
+      // while (a < 100) {
+      //   if (a % 11 == 0) {
+      //     console.log(a);
+      //   }
+      //   a++;
+      // }
 
-      while (a < 100) {
-        if (a % 2 == 0) {
-          console.log(a);
-          i++;
+      // (3)
+
+      let a = 5;
+      let str = "";
+
+      for (let i = 0; i <= a; i++) {
+        for (let j = 0; j <= a - i; j++) {
+          str = str + " ";
         }
+
+        for (let k = 0; k <= i; k++) {
+          str = str + "*";
+        }
+        str = str + "\n";
       }
-
-      console.log("Sawan")
-
+      console.log(str);
     </script>
   </body>
 </html>
