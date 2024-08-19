@@ -75,3 +75,29 @@
 //   .catch((error) => {
 //     console.log(error);
 //   });
+
+fetch("https://dummyjson.com/products/")
+  .then((result) => {
+    return result.json();
+  })
+  .then((data) => {
+    console.log(data);
+
+    let card = document.querySelectorAll(".card");
+    card.forEach((value, index) => {
+      value.getElementsByTagName("h5")[0].innerText =
+        data.products[index].title;
+
+      value.getElementsByTagName("p")[0].innerText =
+        data.products[index].description;
+
+      value.getElementsByTagName("img")[0].attributes[0].value =
+        data.products[index].images;
+    });
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+  .finally(() => {
+    console.log("finally");
+  });

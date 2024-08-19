@@ -77,51 +77,79 @@
 
 // Async Function
 
-let myPro = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    console.log("Db Connected");
-    let tast = false;
-    if (tast) {
-      resolve({
-        id: 1,
-        user: "Sawan",
-        age: 23,
-      });
-    } else reject("Error...");
-  }, 2000);
-});
+// let myPro = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log("Db Connected");
+//     let tast = false;
+//     if (tast) {
+//       resolve({
+//         id: 1,
+//         user: "Sawan",
+//         age: 23,
+//       });
+//     } else reject("Error...");
+//   }, 2000);
+// });
 
-async function myFun() {
-  try {
-    let result = await myPro;
-    console.log(result);
-  } catch (error) {
-    console.log(error);
-  }
-}
+// async function myFun() {
+//   try {
+//     let result = await myPro;
+//     console.log(result);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
-myFun();
+// myFun();
+
+// fetch("https://dummyjson.com/products/")
+//   .then((data) => {
+//     return data.json();
+//   })
+//   .then((result) => {
+//     console.log(result);
+
+//     let card = document.querySelectorAll(".card");
+
+//     card.forEach((value, index) => {
+//       value.getElementsByTagName("h5")[0].innerText =
+//         result.products[index].title;
+//       value.getElementsByTagName("p")[0].innerText =
+//         result.products[index].description;
+//       value.getElementsByTagName("img")[0].attributes[0].value =
+//         result.products[index].images;
+//     });
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// let mypro = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log("Db connected");
+
+//     let task = true;
+
+//     if (task) {
+//       resolve({
+//         id: 1,
+//         user: "Sawan",
+//         age: 23,
+//         pro: "Wev Developer",
+//       });
+//     } else {
+//       reject("Error...");
+//     }
+//   }, 2000);
+// })
+//   .then((user) => {
+//     console.log(user);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("Finally");
+//   });
 
 
-
-fetch("https://dummyjson.com/products/")
-  .then((data) => {
-    return data.json();
-  })
-  .then((result) => {
-    console.log(result);
-
-    let card = document.querySelectorAll(".card");
-
-    card.forEach((value, index) => {
-      value.getElementsByTagName("h5")[0].innerText =
-        result.products[index].title;
-      value.getElementsByTagName("p")[0].innerText =
-        result.products[index].description;
-      value.getElementsByTagName("img")[0].attributes[0].value =
-        result.products[index].images;
-    });
-  })
-  .catch((error) => {
-    console.log(error);
-  });
