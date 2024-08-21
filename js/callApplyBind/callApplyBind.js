@@ -44,3 +44,4 @@ let secObb = {
 allDetails.apply(myObj,[" jaipur :- ", " 303902 :- "]);
 
 allDetails.apply(secObb,[" Udaipur :- ", " 303542 :- "]);
+
