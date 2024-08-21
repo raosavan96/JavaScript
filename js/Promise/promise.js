@@ -150,6 +150,28 @@
 //   })
 //   .finally(() => {
 //     console.log("Finally");
+//   });n
+
+// new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log("db connected");
+//     let tast = false;
+//     if (tast) {
+//       resolve({
+//         user: "Sawan",
+//         age: 23,
+//       });
+//     } else {
+//       console.log("Error...");
+//     }
+//   }, 2000);
+// })
+//   .then((user) => {
+//     console.log(user);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("finally");
 //   });
-
-

@@ -133,32 +133,34 @@
 
       //   (2)
 
-      // fetch("https://dummyjson.com/products/")
-      //   .then((result) => {
-      //     return result.json();
-      //   })
-      //   .then((data) => {
-      //     console.log(data);
+      fetch("https://dummyjson.com/products/")
+        .then((result) => {
+          return result.json();
+        })
+        .then((data) => {
+          console.log(data);
 
-      //     let card = document.querySelectorAll(".card");
+          let card = document.querySelectorAll(".card");
 
-      //     card.forEach((value, index) => {
-      //       value.getElementsByTagName("h5")[0].innerText =
-      //         data.products[index].title;
+          card.forEach((value, index) => {
+            value.getElementsByTagName("h5")[0].innerText =
+              data.products[index].title;
 
-      //       value.getElementsByTagName("p")[0].innerText =
-      //         data.products[index].description;
+            value.getElementsByTagName("p")[0].innerText =
+              data.products[index].description;
 
-      //       value.getElementsByTagName("img")[0].attributes[0].value =
-      //         data.products[index].images;
-      //     });
-      //   })
-      //   .catch((error) => {
-      //     console.log(error);
-      //   })
-      //   .finally(() => {
-      //     console.log("Finally is allways");
-      //   });
-    </script>
+            value.getElementsByTagName("img")[0].attributes[0].value =
+              data.products[index].images;
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .finally(() => {
+          console.log("Finally is allways");
+        });
+
+
+    </script> 
   </body>
 </html>
