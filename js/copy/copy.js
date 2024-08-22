@@ -54,8 +54,9 @@
 // console.log(myObj);
 // console.log(secObj);
 
-// prectice
+// (3) - ladash for deep copy
 
+const copy = require("ladash");
 let myObj = {
   id: "32jn3jh",
   productName: "TV",
@@ -65,16 +66,36 @@ let myObj = {
     city: "Jaipur",
     pincode: 887989,
   },
+  allProducts: function () {
+    console.log("Hello Check all Products");
+  },
 };
+
+let copyOfObh = copy.cloneDeep(myObj);
+console.log(myObj);
+console.log(copyOfObh);
+
+// prectice
+
+// let myObj = {
+//   id: "32jn3jh",
+//   productName: "TV",
+//   price: "$332",
+//   rating: "4.9",
+//   add: {
+//     city: "Jaipur",
+//     pincode: 887989,
+//   },
+// };
 
 // let secObj = Object.assign({}, myObj);
 
-let secObj = { ...myObj };
+// let secObj = { ...myObj };
 
-myObj.productName = "FM";
+// myObj.productName = "FM";
 
-console.log(myObj);
-console.log(secObj);
+// console.log(myObj);
+// console.log(secObj);
 
 // let myObj = {
 //   id: "32jn3jh",
