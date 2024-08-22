@@ -6,6 +6,37 @@
     <title>JavaScript Object Natation</title>
   </head>
   <body>
-    
+    <div class="main">
+      <h1></h1>
+      <p></p>
+      <h1></h1>
+      <p></p>
+    </div>
+    <div class="main">
+      <h1></h1>
+      <p></p>
+      <h1></h1>
+      <p></p>
+    </div>
+
+    <script>
+      async function myFun() {
+        try {
+          let result = await fetch("http://localhost:3000/student");
+          let data = await result.json();
+          console.log(data);
+
+          let box = document.querySelectorAll(".main");
+          box.forEach((value, index) => {
+            value.getElementsByTagName("h1")[0].innerText = data[index].myname;
+
+            value.getElementsByTagName("p")[0].innerText = data[index].phone;
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      myFun();
+    </script>
   </body>
 </html>

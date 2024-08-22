@@ -30,7 +30,7 @@ async function myFun() {
         result[index].rank;
     });
 
-    let slideImg = document.querySelectorAll(".carousel-inner");
+    let slideImg = document.querySelectorAll(".carousel-item");
     slideImg.forEach((value, index) => {
       value.getElementsByTagName("img")[0].attributes[0].value =
         result[index].image;
