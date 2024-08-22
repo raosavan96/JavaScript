@@ -33,11 +33,7 @@ async function myFun() {
     let slideImg = document.querySelectorAll(".carousel-inner");
     slideImg.forEach((value, index) => {
       value.getElementsByTagName("img")[0].attributes[0].value =
-        result[0].image;
-      value.getElementsByTagName("img")[1].attributes[0].value =
-        result[1].image;
-      value.getElementsByTagName("img")[2].attributes[0].value =
-        result[2].image;
+        result[index].image;
     });
   } catch (error) {
     console.error(error);
@@ -45,5 +41,3 @@ async function myFun() {
 }
 
 myFun();
-
-
