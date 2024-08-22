@@ -1,21 +1,22 @@
-[
-    {
-        "id": 1,
-        "myname": "Sawan Kumar Yadav",
-        "age": 23,
-        "phone": 9636447793,
-        "images": {
-            "img": "img1.png"
+{
+    "student": [
+        {
+            "id": 1,
+            "myname": "Sawan Kumar Yadav",
+            "age": 23,
+            "phone": 9636447793,
+            "images": {
+                "img": "img1.png"
+            }
+        },
+        {
+            "id": 2,
+            "myname": "Lokesh Yadav",
+            "age": 21,
+            "phone": 6350188672,
+            "images": {
+                "img": "img1.png"
+            }
         }
-    },
-    {
-        "id": 2,
-        "myname": "Lokesh Yadav",
-        "age": 21,
-        "phone": 6350188672,
-        "images": {
-            "img": "img1.png"
-        }
-    }
-]
-
+    ]
+}
