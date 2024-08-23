@@ -1,0 +1,39 @@
+{
+    "members": [
+        {
+            "id": 1,
+            "name": "Laxma Devi",
+            "age": 65
+        },
+        {
+            "id": 2,
+            "name": "Ratan Lal Yadav",
+            "age": 43
+        },
+        {
+            "id": 3,
+            "name": "Indra Devi",
+            "age": 40
+        },
+        {
+            "id": 4,
+            "name": "Sawan Kumar Yadav",
+            "age": 23
+        },
+        {
+            "id": 5,
+            "name": "Nisha Kumari Yadav",
+            "age": 23
+        },
+        {
+            "id": 6,
+            "name": "Lokesh Yadav",
+            "age": 20
+        },
+        {
+            "id": 7,
+            "name": "Manish Yadav",
+            "age": 20
+        }
+    ]
+}
