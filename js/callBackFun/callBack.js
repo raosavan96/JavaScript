@@ -1,19 +1,36 @@
-// Call Back Function in JavaScript
+// // Call Back Function in JavaScript
 
-function myCall() {
-  console.log("Hi call back function");
+// function myCall() {
+//   console.log("Hi call back function");
+// }
+
+// function secCall() {
+//   console.log("Hi secCall call back function");
+// }
+
+// function myFun(a, b, callback) {
+//   let c = a * b;
+//   console.log(c);
+//   callback();
+// }
+
+// myFun(9, 7, myCall);
+
+// myFun(4, 3, secCall);
+
+function myFn() {
+  console.log("I am callback function");
 }
 
-function secCall() {
-  console.log("Hi secCall call back function");
-}
-
-function myFun(a, b, callback) {
+function byFn(a, b, callback) {
   let c = a * b;
   console.log(c);
   callback();
 }
 
-myFun(9, 7, myCall);
+function syFn() {
+  console.log("third fun");
+}
 
-myFun(4, 3, secCall);
+byFn(7, 7, myFn);
+byFn(8, 8, syFn);
