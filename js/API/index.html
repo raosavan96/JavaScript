@@ -133,7 +133,7 @@
 
       //   (2)
 
-      fetch("https://dummyjson.com/products/")
+      fetch("https://dummyjson.com/user/")
         .then((result) => {
           return result.json();
         })
@@ -144,13 +144,11 @@
 
           card.forEach((value, index) => {
             value.getElementsByTagName("h5")[0].innerText =
-              data.products[index].title;
-
+              data.users[index].username;
             value.getElementsByTagName("p")[0].innerText =
-              data.products[index].description;
-
+              data.users[index].email;
             value.getElementsByTagName("img")[0].attributes[0].value =
-              data.products[index].images;
+              data.users[index].image;
           });
         })
         .catch((error) => {
@@ -159,8 +157,6 @@
         .finally(() => {
           console.log("Finally is allways");
         });
-
-
-    </script> 
+    </script>
   </body>
 </html>

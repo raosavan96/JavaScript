@@ -7,34 +7,63 @@
   </head>
   <body>
     <script>
-      function uniqueId(length) {
-        let characters =
+      // function uniqueId(length) {
+      //   let characters =
+      //     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMOPQRSTUVWXYZ1234567890";
+
+      //   let id = "";
+
+      //   for (let i = 1; i < length; i++) {
+      //     let randomNum = Math.floor(Math.random() * characters.length);
+      //     let uniqMy = characters.charAt(randomNum);
+      //     id += uniqMy;
+      //   }
+
+      //   console.log(id);
+      // }
+
+      // uniqueId(8);
+
+      // function otpFun(length) {
+      //   let otpNum = "1234567890";
+      //   let otp = "";
+      //   for (let i = 1; i <= length; i++) {
+      //     let rendNum = Math.floor(Math.random() * otpNum.length);
+      //     otp += otpNum.charAt(rendNum);
+      //   }
+      //   console.log(otp);
+      // }
+
+      // otpFun(6);
+
+      function myFun(langth) {
+        let word =
           "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMOPQRSTUVWXYZ1234567890";
 
         let id = "";
 
-        for (let i = 1; i < length; i++) {
-          let randomNum = Math.floor(Math.random() * characters.length);
-          let uniqMy = characters.charAt(randomNum);
-          id += uniqMy;
+        for (let i = 1; i < langth; i++) {
+          let rendWord = Math.floor(Math.random() * word.length);
+          let data = word.charAt(rendWord);
+          id += data;
         }
-
         console.log(id);
       }
 
-      uniqueId(8);
+      myFun(8);
 
-      function otpFun(length) {
-        let otpNum = "1234567890";
+      function myOtp(length) {
+        let num = "1234567890";
         let otp = "";
-        for (let i = 1; i <= length; i++) {
-          let rendNum = Math.floor(Math.random() * otpNum.length);
-          otp += otpNum.charAt(rendNum);
+        for (let i = 0; i < length; i++) {
+          let rendNumm = Math.floor(Math.random() * num.length);
+          let otpNum = num.charAt(rendNumm);
+          otp += otpNum;
         }
         console.log(otp);
       }
 
-      otpFun(6);
+      myOtp(6);
     </script>
   </body>
 </html>

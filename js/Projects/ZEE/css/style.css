@@ -82,6 +82,10 @@ img {
   text-decoration: none;
 }
 
+.carousel-item {
+  height: 80vh;
+}
+
 /* movies card sec */
 
 .movies_card {

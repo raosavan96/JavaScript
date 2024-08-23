@@ -18,7 +18,7 @@
 
 // console.log(set2);
 
-// 2. has() - value fine krne ke kam aata h
+// 2. has() - value find krne ke kam aata h
 
 // let mySets = new Set(["Sawan", "Yadav", "Lokesh", "Nisha", "Manisha"]);
 

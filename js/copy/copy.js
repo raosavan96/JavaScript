@@ -56,24 +56,24 @@
 
 // (3) - ladash for deep copy
 
-const copy = require("ladash");
-let myObj = {
-  id: "32jn3jh",
-  productName: "TV",
-  price: "$332",
-  rating: "4.9",
-  add: {
-    city: "Jaipur",
-    pincode: 887989,
-  },
-  allProducts: function () {
-    console.log("Hello Check all Products");
-  },
-};
+// const _ = require("lodash");
+// const myObj = {
+//   id: "32jn3jh",
+//   productName: "TV",
+//   price: "$332",
+//   rating: "4.9",
+//   add: {
+//     city: "Jaipur",
+//     pincode: 887989,
+//   },
+//   allProducts: function () {
+//     console.log("Hello Check all Products");
+//   },
+// };
 
-let copyOfObh = copy.cloneDeep(myObj);
-console.log(myObj);
-console.log(copyOfObh);
+// const clonedObject = _.cloneDeep(myObj);
+// console.log(myObj);
+// console.log(clonedObject);
 
 // prectice
 
@@ -110,5 +110,42 @@ console.log(copyOfObh);
 
 // let secObj = JSON.parse(JSON.stringify(myObj));
 
+// console.log(myObj);
+// console.log(secObj);
+
+// let myObj = {
+//   id: 1,
+//   user: "Sawan",
+//   age: 23,
+//   add: {
+//     city: "Jaipur",
+//     pincode: 303903,
+//   },
+// };
+
+// // let secObj = { ...myObj };
+// let secObj = Object.assign({}, myObj);
+// // myObj.add.city = "kota";
+
+// console.log(myObj);
+// console.log(secObj);
+
+// const copy = require("ladash");
+
+// let myObj = {
+//   id: 1,
+//   user: "Sawan",
+//   age: 23,
+//   add: {
+//     city: "Jaipur",
+//     pincode: 303903,
+//   },
+//   fun: function () {
+//     console.log("id:- " + this.id);
+//   },
+// };
+
+// let secObj = copy.cloneDeep(myObj);
+// // secObj.add.city = "kota";
 // console.log(myObj);
 // console.log(secObj);
