@@ -130,22 +130,22 @@
 // console.log(myObj);
 // console.log(secObj);
 
-// const copy = require("ladash");
+let _ = require("lodash");
 
-// let myObj = {
-//   id: 1,
-//   user: "Sawan",
-//   age: 23,
-//   add: {
-//     city: "Jaipur",
-//     pincode: 303903,
-//   },
-//   fun: function () {
-//     console.log("id:- " + this.id);
-//   },
-// };
+let myObj = {
+  id: 1,
+  user: "Sawan",
+  age: 23,
+  add: {
+    city: "Jaipur",
+    pincode: 303903,
+  },
+  fun: function () {
+    console.log("id:- " + this.id);
+  },
+};
 
-// let secObj = copy.cloneDeep(myObj);
-// // secObj.add.city = "kota";
-// console.log(myObj);
-// console.log(secObj);
+let secObj = _.cloneDeep(myObj);
+// secObj.add.city = "kota";
+console.log(myObj);
+console.log(secObj);
