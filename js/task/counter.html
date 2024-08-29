@@ -14,22 +14,22 @@
     <script>
       // (1)
 
-      // let countText = document.getElementById("counter");
-      // let counter = 0;
-      // function increMent() {
-      //   counter++;
-      //   if (counter == 10) {
-      //     document.getElementById("goal").innerText =
-      //       "Yaahoo you acchive the gole";
-      //   }
-      //   countText.innerHTML = counter;
-      // }
+      let countText = document.getElementById("counter");
+      let counter = 0;
+      function increMent() {
+        counter++;
+        if (counter == 10) {
+          document.getElementById("goal").innerText =
+            "Yaahoo you acchive the gole";
+        }
+        countText.innerHTML = counter;
+      }
 
-      // function decreMent() {
-      //   counter--;
+      function decreMent() {
+        counter--;
 
-      //   countText.innerHTML = counter;
-      // }
+        countText.innerHTML = counter;
+      }
 
       // (2)
 
@@ -43,20 +43,20 @@
 
       // (3)
 
-      let a = 5;
-      let str = "";
+      // let a = 5;
+      // let str = "";
 
-      for (let i = 0; i <= a; i++) {
-        for (let j = 0; j <= a - i; j++) {
-          str = str + " ";
-        }
+      // for (let i = 0; i <= a; i++) {
+      //   for (let j = 0; j <= a - i; j++) {
+      //     str = str + " ";
+      //   }
 
-        for (let k = 0; k <= i; k++) {
-          str = str + "*";
-        }
-        str = str + "\n";
-      }
-      console.log(str);
+      //   for (let k = 0; k <= i; k++) {
+      //     str = str + "*";
+      //   }
+      //   str = str + "\n";
+      // }
+      // console.log(str);
     </script>
   </body>
 </html>

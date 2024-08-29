@@ -23,7 +23,7 @@
 // console.log(myObj);
 // console.log(secObj);
 
-// (2)
+// (2) - spread Opretor
 
 // let secObj = { ...myObj };
 // myObj.price = "$88";
